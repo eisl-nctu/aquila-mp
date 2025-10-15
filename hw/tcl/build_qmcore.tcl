@@ -88,7 +88,7 @@ set_property top soc_top [get_filesets sources_1]
 
 # Read simulation-only files.
 add_files -fileset sim_1 -norecurse $source_dir/soc_rtl/soc_tb.sv
-add_files -fileset sim_1 -norecurse $source_dir/soc_rtl/mem_port/mig_7series_sim.v
+add_files -fileset sim_1 -norecurse $source_dir/soc_rtl/mem_port/memctrl_sim.v
 
 # Define the target board parameters for simulation.
 set_property verilog_define [list $board_model] [get_filesets sim_1]
