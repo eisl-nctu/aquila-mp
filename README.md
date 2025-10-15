@@ -10,7 +10,7 @@ Aquila-mp is an open-source scalable symmetric multicore processor SoC that can 
 
 ## **Specification**
 
-Current features of the Aquila-mp SoC include:
+Current features of the Aquila-mp SoC used in this project include:
 
 - RV32IMA ISA-compliant.
 - Embedded tightly-coupled on-chip memory (TCM).
@@ -40,10 +40,10 @@ For detailed instructions on how to set up and use the Aquila-mp SoC, please ref
 
 ---
 
-## **Acknowledgment**  
-Aquila's source code is available on GitHub: [Aquila GitHub Repository](https://github.com/eisl-nctu/aquila)
+## **Contributors**  
+This project is based on the Aquila core project at [Aquila GitHub Repository](https://github.com/eisl-nctu/aquila)
 
-The multi-core system is extended by contributions from the Embedded Intelligent Systems Laboratory (EISL) at National Yang Ming Chiao Tung University (NYCU). We acknowledge the support and collaboration from the open-source community and our academic partners.
+The multi-core system is constructed by the following contributors, Tzu-Chen Yang, Ye Chen, Lin-En Yen, Yu-Ting Lee, and Chun-Jen Tsai, from the Embedded Intelligent Systems Laboratory (EISL) at National Yang Ming Chiao Tung University (NYCU). We acknowledge the support and collaboration from the open-source community and our academic partners.
 
 ## **Current Work**
 Integration of a Memory Management Unit (MMU) to enable Linux OS support.
@@ -54,28 +54,25 @@ Integration of a Memory Management Unit (MMU) to enable Linux OS support.
 
 ### **sw/**  
 - **elibc/** – Basic C header library  
-- **FreeRTOS/** – FreeRTOS SMP library for aquila-mp   
+- **FreeRTOS/** – FreeRTOS/SMP library for aquila-mp   
 - **rtos_matrix/** – Matrix multiplication evaluation code for multi-core based on FreeRTOS
 - **rtos_sorting/** – Array sorting evaluation code for multi-core based on FreeRTOS
-- **rtos_ocr/** – MLP evaluation code for multi-core parallel execution based on FreeRTOS
-- **rtos_cnn/** – Lenet-5 convolutional neural network evaluation code for multi-core parallel execution based on FreeRTOS
-- **single_core_test/** – Contains the above four programs, but executed using the single-core FreeRTOS library and run on a single core.
-- **uartboot/** – Contains UART boot code for core 0
-- **uartboot_other_core/** – Contains UART boot code for other core
+- **rtos_mlp/** – A Multi-Level Perceptron test code for multi-core parallel execution based on FreeRTOS
+- **rtos_lenet5/** – Lenet-5 convolutional neural network evaluation code for multi-core parallel execution based on FreeRTOS
+- **uartboot/** – Contains UART boot code for all processor cores
 
-### **src/**  
+### **hw/src/**
 - **core_rtl/** – Contains the RTL source code for the Aquila processor core, including modules such as the ALU, control unit, and register file.
-- **mem/** – Contains the bootrom code that can be compiled in `sw/uartboot`and `sw/uartboot_other_core`
-- **soc_rtl/** – Contains the top-level RTL code for the Aquila SoC  
+- **ip/** - Contains the DDR4 memory configuration file of the MIG controller
+- **mig/** - Contains the DDR3 memory configuration file of the MIG controller
+- **mem/** – Contains the pre-compiled bootrom code in Vivado memory file format
+- **soc_rtl/** – Contains the top-level RTL code for the Aquila SoC
 
-### **tb_verilator/**
+### **hw/tb_verilator/**
 - Contains testbenches for Verilator simulation
 
-### **tcl/build_arty100.tcl**
-- Script to build the Aquila-mp SoC on the Arty A7-100T board
-
-### **tcl/build_qmcore.tcl**
-- Script to build the Aquila-mp SoC on the QMTech board
-
-### **tcl/build_genesys2.tcl**
-- Script to build the Aquila-mp SoC on the Genesys 2 board
+### **hw/tcl/**
+- **build_arty100.tcl** - Script to create the Vivado workspace of Aquila-mp SoC for the Arty A7-100T board
+- **hw/tcl/build_qmcore.tcl** - Script to create the Vivado workspace of Aquila-mp SoC for the QMTech board
+- **hw/tcl/build_genesys2.tcl** - Script to create the Vivado workspace of Aquila-mp SoC for the Genesys2 board
+- **hw/tcl/build_kc705.tcl** - Script to create the Vivado workspace of Aquila-mp SoC for the Xilinx KC705 board
