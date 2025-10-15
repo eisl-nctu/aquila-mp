@@ -1,8 +1,8 @@
-# The Aquila multi-Core RISC-V SoC
+# The Scalable Symmetric Multiprocessor (SMP) RISC-V SoC
 
 ---
 
-Aquila-mp is an open-source multi-core (at mote 16 cores on Genesys2 FPGA board) system-on-chip featuring a 32-bit RISC-V RV32IMA processor, extended by the [Aquila SoC](https://github.com/eisl-nctu/aquila). It employs the MESI cache coherence protocol to maintain data consistency across L1 and L2 caches in a shared memory system. The processor supports atomic instructions for efficient synchronization and mutual exclusion in multicore environments. Developed using Verilog HDL, the system is synthesized with the Xilinx Vivado toolchain and operates on the Arty A7-100T and Kintex-7 325T , Genesys 2 FPGA board.
+Aquila-mp is an open-source scalable symmetric multicore processor SoC that can be scaled to arbitrary number of cores. On the low-cost Genesys2 FPGA board, we have tested up to 16 cores. Each core is a 32-bit RISC-V processor, from [Aquila SoC](https://github.com/eisl-nctu/aquila). It employs the MESI cache coherence protocol to maintain data consistency across L1 and L2 caches in a shared memory system. The processor supports atomic instructions for efficient synchronization and mutual exclusion in multicore environments. Developed using Verilog HDL, the system is synthesized with the Xilinx Vivado toolchain and verified on several FPGA platforms, including Arty A7-100T, Xilinx KC705, and Genesys2.
 
 ![Architecture Diagram](docs/architecture.jpg)
 
