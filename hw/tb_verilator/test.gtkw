@@ -1,0 +1,159 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Sep  8 05:33:50 2025
+[*]
+[dumpfile] "/home/zichen/zichen/FreeRTOS/tb_verilator/core_obj_dir/aquila_core.fst"
+[dumpfile_mtime] "Mon Sep  8 00:53:19 2025"
+[dumpfile_size] 1055324711
+[savefile] "/home/zichen/zichen/FreeRTOS/tb_verilator/test.gtkw"
+[timestart] 141785964
+[size] 2474 1536
+[pos] -51 -51
+*-2.988947 141785994 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.aquila_testharness.
+[treeopen] top.aquila_testharness.Amo_arbiter.
+[treeopen] top.aquila_testharness.aquila_core.
+[treeopen] top.aquila_testharness.aquila_core.D_Cache.
+[treeopen] top.aquila_testharness.aquila_core.D_Cache.genblk1[0].
+[treeopen] top.aquila_testharness.aquila_core.D_Cache.genblk1[1].
+[treeopen] top.aquila_testharness.aquila_core.D_Cache.genblk1[1].DATA_BRAM.
+[treeopen] top.aquila_testharness.aquila_core.D_Cache.genblk2[0].
+[treeopen] top.aquila_testharness.aquila_core.D_Cache.genblk2[1].
+[treeopen] top.aquila_testharness.aquila_core.D_Cache.genblk3[0].
+[treeopen] top.aquila_testharness.aquila_core.D_Cache.genblk3[1].
+[treeopen] top.aquila_testharness.aquila_core.D_Cache.genblk4[0].
+[treeopen] top.aquila_testharness.aquila_core.D_Cache.genblk4[1].
+[treeopen] top.aquila_testharness.aquila_core.RISCV_CORE0.
+[treeopen] top.aquila_testharness.aquila_core.RISCV_CORE0.Memory.
+[treeopen] top.aquila_testharness.aquila_core.RISCV_CORE0.Register_File.
+[treeopen] top.aquila_testharness.coherence_unit.
+[treeopen] top.aquila_testharness.genblk1[15].aquila_top.
+[treeopen] top.aquila_testharness.genblk1[1].aquila_top.
+[treeopen] top.aquila_testharness.genblk1[1].aquila_top.D_Cache.
+[treeopen] top.aquila_testharness.genblk1[1].aquila_top.RISCV_CORE0.
+[treeopen] top.aquila_testharness.genblk1[1].aquila_top.RISCV_CORE0.Register_File.
+[treeopen] top.aquila_testharness.genblk1[2].aquila_top.
+[treeopen] top.aquila_testharness.genblk1[2].aquila_top.RISCV_CORE0.
+[treeopen] top.aquila_testharness.genblk1[2].aquila_top.RISCV_CORE0.Register_File.
+[treeopen] top.aquila_testharness.genblk1[3].aquila_top.
+[treeopen] top.aquila_testharness.genblk1[3].aquila_top.RISCV_CORE0.
+[treeopen] top.aquila_testharness.genblk1[6].
+[treeopen] top.aquila_testharness.genblk1[6].aquila_top.
+[treeopen] top.aquila_testharness.genblk1[6].aquila_top.D_Cache.
+[sst_width] 356
+[signals_width] 316
+[sst_expanded] 1
+[sst_vpaned_height] 845
+@22
+top.aquila_testharness.aquila_core.RISCV_CORE0.Register_File.sp[31:0]
+top.aquila_testharness.aquila_core.p_i_addr[31:0]
+top.aquila_testharness.aquila_core.p_i_code[31:0]
+top.aquila_testharness.aquila_core.D_Cache.p_addr_i[31:0]
+@24
+top.aquila_testharness.aquila_core.D_Cache.p_data_i[31:0]
+@28
+top.aquila_testharness.aquila_core.D_Cache.p_rw_r
+top.aquila_testharness.aquila_core.D_Cache.p_strobe_r
+top.aquila_testharness.aquila_core.D_Cache.p_ready_o
+@24
+top.aquila_testharness.aquila_core.D_Cache.p_data_o[31:0]
+@28
+top.aquila_testharness.aquila_core.clk_i
+@22
+top.aquila_testharness.genblk1[1].aquila_top.p_i_addr[31:0]
+top.aquila_testharness.genblk1[1].aquila_top.RISCV_CORE0.Register_File.sp[31:0]
+top.aquila_testharness.genblk1[2].aquila_top.RISCV_CORE0.Register_File.sp[31:0]
+top.aquila_testharness.genblk1[3].aquila_top.RISCV_CORE0.Register_File.sp[31:0]
+top.aquila_testharness.genblk1[15].aquila_top.p_i_addr[31:0]
+@28
+top.aquila_testharness.genblk1[15].aquila_top.D_Cache.p_strobe_r
+top.aquila_testharness.genblk1[15].aquila_top.D_Cache.p_rw_i
+@22
+top.aquila_testharness.genblk1[15].aquila_top.D_Cache.p_data_i[31:0]
+@24
+top.aquila_testharness.genblk1[15].aquila_top.D_Cache.p_data_o[31:0]
+@22
+top.aquila_testharness.genblk1[15].aquila_top.D_Cache.p_addr_r[31:0]
+top.aquila_testharness.ATOM_U.M_DMEM_addr_o[31:0]
+@28
+top.aquila_testharness.ATOM_U.M_DMEM_strobe_o
+top.aquila_testharness.ATOM_U.M_DMEM_rw_o
+@24
+top.aquila_testharness.ATOM_U.M_DMEM_data_o[31:0]
+@28
+top.aquila_testharness.ATOM_U.M_DMEM_done_i
+@24
+top.aquila_testharness.ATOM_U.M_DMEM_data_i[31:0]
+top.aquila_testharness.ATOM_U.core_id_bin[3:0]
+@22
+top.aquila_testharness.genblk1[1].aquila_top.p_i_addr[31:0]
+top.aquila_testharness.genblk1[1].aquila_top.D_Cache.p_addr_r[31:0]
+top.aquila_testharness.genblk1[1].aquila_top.D_Cache.p_data_i[31:0]
+@28
+top.aquila_testharness.genblk1[1].aquila_top.D_Cache.p_rw_i
+top.aquila_testharness.genblk1[1].aquila_top.D_Cache.p_strobe_r
+top.aquila_testharness.genblk1[1].aquila_top.D_Cache.p_ready_o
+top.aquila_testharness.genblk1[6].aquila_top.p_d_strobe
+@22
+top.aquila_testharness.genblk1[6].aquila_top.p_i_addr[31:0]
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_addr_i[31:0]
+@c00022
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_byte_enable_r[3:0]
+@28
+(0)top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_byte_enable_r[3:0]
+(1)top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_byte_enable_r[3:0]
+(2)top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_byte_enable_r[3:0]
+(3)top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_byte_enable_r[3:0]
+@1401200
+-group_end
+@28
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_strobe_r
+@22
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_data_i[31:0]
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.S[3:0]
+@28
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_rw_i
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_ready_o
+@22
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.p_data_o[31:0]
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.response_data_o[127:0]
+@28
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.response_ready_o
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.invalidate_i
+@22
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.probe_addr_i[31:0]
+@28
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.probe_strobe_i
+top.aquila_testharness.genblk1[6].aquila_top.D_Cache.probe_on_curr_line
+@22
+top.aquila_testharness.L2cache.CU_L2_addr_i[31:0]
+@28
+top.aquila_testharness.L2cache.probe_strobe_i
+top.aquila_testharness.L2cache.probe_rw_i
+@c00022
+#{top.aquila_testharness.coherence_unit.response_data_ready[0:15]} top.aquila_testharness.coherence_unit.response_data_ready[0] top.aquila_testharness.coherence_unit.response_data_ready[1] top.aquila_testharness.coherence_unit.response_data_ready[2] top.aquila_testharness.coherence_unit.response_data_ready[3] top.aquila_testharness.coherence_unit.response_data_ready[4] top.aquila_testharness.coherence_unit.response_data_ready[5] top.aquila_testharness.coherence_unit.response_data_ready[6] top.aquila_testharness.coherence_unit.response_data_ready[7] top.aquila_testharness.coherence_unit.response_data_ready[8] top.aquila_testharness.coherence_unit.response_data_ready[9] top.aquila_testharness.coherence_unit.response_data_ready[10] top.aquila_testharness.coherence_unit.response_data_ready[11] top.aquila_testharness.coherence_unit.response_data_ready[12] top.aquila_testharness.coherence_unit.response_data_ready[13] top.aquila_testharness.coherence_unit.response_data_ready[14] top.aquila_testharness.coherence_unit.response_data_ready[15]
+@28
+top.aquila_testharness.coherence_unit.response_data_ready[0]
+top.aquila_testharness.coherence_unit.response_data_ready[1]
+top.aquila_testharness.coherence_unit.response_data_ready[2]
+top.aquila_testharness.coherence_unit.response_data_ready[3]
+top.aquila_testharness.coherence_unit.response_data_ready[4]
+top.aquila_testharness.coherence_unit.response_data_ready[5]
+top.aquila_testharness.coherence_unit.response_data_ready[6]
+top.aquila_testharness.coherence_unit.response_data_ready[7]
+top.aquila_testharness.coherence_unit.response_data_ready[8]
+top.aquila_testharness.coherence_unit.response_data_ready[9]
+top.aquila_testharness.coherence_unit.response_data_ready[10]
+top.aquila_testharness.coherence_unit.response_data_ready[11]
+top.aquila_testharness.coherence_unit.response_data_ready[12]
+top.aquila_testharness.coherence_unit.response_data_ready[13]
+top.aquila_testharness.coherence_unit.response_data_ready[14]
+top.aquila_testharness.coherence_unit.response_data_ready[15]
+@1401200
+-group_end
+@22
+top.aquila_testharness.coherence_unit.S[3:0]
+top.aquila_testharness.coherence_unit.current_rw_core_id[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

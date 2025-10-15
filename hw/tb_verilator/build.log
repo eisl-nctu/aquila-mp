@@ -1,0 +1,32 @@
+%Warning-MODDUP: vsrc/aquila_testharness.sv:57:8: Duplicate declaration of module: 'aquila_testharness'
+   57 | module aquila_testharness #(
+      |        ^~~~~~~~~~~~~~~~~~
+                 vsrc/aquila_testharness.sv:57:8: ... Location of original declaration
+   57 | module aquila_testharness #(
+      |        ^~~~~~~~~~~~~~~~~~
+                 ... For warning description see https://verilator.org/warn/MODDUP?v=5.035
+                 ... Use "/* verilator lint_off MODDUP */" and lint_on around source to disable this message.
+%Warning-MODDUP: vsrc/dp_ram.sv:1:8: Duplicate declaration of module: 'dp_ram'
+    1 | module dp_ram #(
+      |        ^~~~~~
+                 vsrc/dp_ram.sv:1:8: ... Location of original declaration
+    1 | module dp_ram #(
+      |        ^~~~~~
+%Warning-MODDUP: vsrc/mock_uart.sv:2:8: Duplicate declaration of module: 'mock_uart'
+    2 | module mock_uart #(
+      |        ^~~~~~~~~
+                 vsrc/mock_uart.sv:2:8: ... Location of original declaration
+    2 | module mock_uart #(
+      |        ^~~~~~~~~
+%Warning-INITIALDLY: ../src/core_rtl/distri_ram.v:77:16: Non-blocking assignment '<=' in initial/final block
+                                                       : ... note: In instance 'aquila_testharness'
+                                                       : ... This will be executed as a blocking assignment '='!
+   77 |         RAM[i] <= 0;
+      |                ^~
+                     ... For warning description see https://verilator.org/warn/INITIALDLY?v=5.035
+                     ... Use "/* verilator lint_off INITIALDLY */" and lint_on around source to disable this message.
+%Warning-INITIALDLY: ../src/core_rtl/distri_ram_dp.v:82:16: Non-blocking assignment '<=' in initial/final block
+                                                          : ... note: In instance 'aquila_testharness.genblk1[0].aquila_top.D_Cache'
+                                                          : ... This will be executed as a blocking assignment '='!
+   82 |         RAM[i] <= 0;
+      |                ^~
