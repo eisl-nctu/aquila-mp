@@ -288,10 +288,9 @@ module amo_arbiter #(
         genvar idx;
         generate
             for(idx = 0;idx < `CORE_NUMS;idx = idx + 1) begin
-                assign packed_strobe[i] = P_strobe_r[i];
+                assign packed_strobe[idx] = P_strobe_r[idx];
             end
         endgenerate
-
     `else
     wire [0 : CORE_NUMS-1] packed_strobe = {<<{P_strobe_r[0 : CORE_NUMS-1]}};
     `endif
