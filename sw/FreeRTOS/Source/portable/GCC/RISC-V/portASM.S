@@ -85,8 +85,11 @@
 /*-----------------------------------------------------------*/
 
 pxPortInitialiseStack:
-    addi a0, a0, -portWORD_SIZE         /* Space for critical nesting count. */
-    store_x x0, 0(a0)                   /* Critical nesting count starts at 0 for every task. */
+// old code with floating-point bug
+//    addi a0, a0, -portWORD_SIZE         /* Space for critical nesting count. */
+//    store_x x0, 0(a0)                   /* Critical nesting count starts at 0 for every task. */
+    # Add 2 dummy entry to maintain a 32-entry frame.
+    addi a0, a0, -(2 * portWORD_SIZE)
 
 #ifdef __riscv_32e
     addi a0, a0, -(6 * portWORD_SIZE)   /* Space for registers x10-x15. */
